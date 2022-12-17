@@ -5,9 +5,9 @@ class CTest implements Runnable {
 		id = str;
 	}
 	public void run() {
-		for (int i=1;i<=5; i++) {
+		for (int i=1;i<=5;i++) {
 			try {
-				Thread.sleep((int) (100 * Math.random()));
+				Thread.sleep((int)(100*Math.random()));
 			} 
 			catch (InterruptedException e) {
 			}
@@ -25,9 +25,9 @@ public class Class12{
  Thread t2=new Thread(bye);
  Thread t3=new Thread(morning);
  Thread t4=new Thread(night);
- try{
  t1.start();
- t1.join();
+ try{      
+ t1.join();         
  t3.start();
  t3.join();
  t4.start();
